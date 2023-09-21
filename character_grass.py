@@ -30,9 +30,15 @@ def run_rectangle():
     print('RECTANGLE')
     for x in range(50,750+1,5):
         render_frame(x,90) # xy위치에 캐릭터 그려주는 함수
+        
+    for y in range(90,550+1,5):
+        render_frame(750,y)
 
     for x in range(750,50-1,-5):
-        render_fframe(x,550)
+        render_frame(x,550)
+
+    for y in range(550,90-1,-5):
+        render_frame(50,y)
 
 
 while True:
